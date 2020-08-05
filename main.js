@@ -170,6 +170,7 @@ d_dImg.addEventListener('click',rollD_d);
 /******************
  * RESET FUNCTION *
  ******************/
+const emp = [];
 const reset = function(){
   singleMean.innerText = "NA";
   singleMedian.innerText = "NA";
@@ -188,7 +189,10 @@ const reset = function(){
   d_dMedian.innerText = "NA";
   d_dMode.innerText = "NA";
   d_dImg.src = "images/start/d20.jpg"
-
+  sixes.splice(0,sixes.length);
+  doubleSixes.splice(0,doubleSixes.length);
+  twelves.splice(0,twelves.length);
+  twenties.splice(0,twenties.length);
 }
 
 const zero = document.querySelector("button#reset-button")
