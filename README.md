@@ -9,7 +9,7 @@ Today you'll be making an app that combines all the fun of rolling dice with all
 
 ### Tools Left Behind
 
-There's been some code left behind in this other-wise gutted app.
+There's been some code left behind in this other-wise gutted app: a random number generator and an array sorter. Use them!
 
 And feel free to use the comment boxes to organize your sections. (Or don't.)
 
@@ -28,13 +28,22 @@ If you want to add more comment boxes, check out [the Comment Box extension](htt
 
 **Event Listeners**
 
-Each of the dice images should have click event listeners to run its respective "roll functions". That is, the 6-sided die, when clicked, needs to launch the roll-a-6-sided-die function.
+Here's where you'll query your UI elements the user interacts with and add event listener functions. For now, leave the functions themselves blank. We'll come back to them.
 
-The other event listener we'll need is our reset button. We'll talk about what that should do soon enough, but set it to run some kind of function.
+The UI elements are: the dice images should have click event listeners to run its respective "roll functions", and the rest button should have a click listener to reset all data and the interface.
 
-**Starting Images**
+Again, leave the functions themselves empty right now!
 
-The other thing to set up in the global scope is setting the starting images. There are various reasons to do it this way, rather than just setting the source in the html, but for you, it means that you'll both get some immediate practice with setting image sources, and also, when you reset later, you'll need this bit of code then to put the starting images back in. Since you'll be running this code any time they want to reset things, you might as well put it in a function, and then call that function right after its declaration to set everything up.
+
+**Resetting/Setting Starting Images**
+
+Let's fill in that reset function we left blank. It will need to:
+
+1. empty all four global roll arrays
+2. change the dice buttons back to their starting images (in the `start` sub-directory of our `images` directory!)
+3. change the text in our mean/media/mode text areas to nothing (what's the "no value" for a string?)
+
+Once you've got that function declared, call it. We want to make sure we always start out with a fresh slate of images.
 
 
 ### Roll Functions
@@ -50,7 +59,7 @@ Once you've got that going, it's time for some maths:
 
 ### Some Maths
 
-The DOM manipulation is harder than what you've done so far, for sure, but the hardest part of this project is calculating the mean, median and mode. We _highly_ recommend making helper functions for each of these that take in an array as input and spit out one number as output.
+The DOM manipulation is harder than what you've done so far, for sure, but the hardest part of this project is calculating the mean, median and mode. We _highly_ recommend making helper functions for each of these that take in an array as input and spit out one number as output.Also, mode is really hard; consider that one a stretch goal!
 
 Some tips:
 
@@ -60,17 +69,11 @@ Some tips:
 * For the mode, think about storing how many times you've seen each number in an object and tracking which is the highest number as you go.
 
 
-### Resetting
-
-Your reset function will need to:
-
-* Set the starting images back.
-* Remove the results for the mean, median, and mode calculations.
-* Erase everything in each array.
-
-Don't change the arrays to being defined using `let`. That way lies _madness_, and there are other ways besides.
-
-
 ### Good luck!
 
 Good luck _indeed_.
+
+
+### Stretch Goals
+
+Coming soon!
