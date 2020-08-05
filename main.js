@@ -8,12 +8,12 @@ const twelves = [];
 const twenties = [];
 
 
-/*************************
- * RANDOM ROLL GENERATOR *
- *************************/
+/****************************
+ * HELPER FUNCTIONS FOR YOU * 
+****************************/
 
 
-function getRandomNumber(max) {
+const getRandomNumber = function(max) {
     const rand = Math.random();
     const range = rand * max;
     const result = Math.ceil(range);
@@ -21,22 +21,38 @@ function getRandomNumber(max) {
     return result;
 }
 
+const sortByNumber = function(arr) {
+  const byNumber = function(item1, item2) {
+    return item1 - item2;
+  }
+
+  return arr.slice().sort(byNumber);
+}
 
 /*******************
  * YOUR CODE BELOW *
- *******************/
+ ******************/
+
+
+
 
 
 /*******************
- * EVENT LISTENERS *
- *******************/
+RESET EVENT LISTENER
+*******************/
+
+
+
+
+
+/************************
+ * ROLL EVENT LISTENERS *
+************************/
+
+
+
 
 
 /****************
  * MATH SECTION *
  ****************/
-
-
-/*********
- * RESET *
- *********/
