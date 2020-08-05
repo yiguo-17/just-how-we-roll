@@ -31,8 +31,8 @@ const sortByNumber = function(arr) {
 /*******************
  * YOUR CODE BELOW *
  *******************/
-
-
+const nums = [15,20,5,6,1,3,3,5,7,17]
+console.log(sortByNumber(nums))
 
 /*******************
  * EVENT LISTENERS *
