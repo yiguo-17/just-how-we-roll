@@ -8,10 +8,9 @@ const twelves = [];
 const twenties = [];
 
 
-/****************************
- * HELPER FUNCTIONS FOR YOU * 
-****************************/
-
+/********************
+ * HELPER FUNCTIONS *
+********************/
 
 const getRandomNumber = function(max) {
     const rand = Math.random();
@@ -31,27 +30,17 @@ const sortByNumber = function(arr) {
 
 /*******************
  * YOUR CODE BELOW *
- ******************/
-
-
+ *******************/
 
 
 
 /*******************
-RESET EVENT LISTENER
-*******************/
+ * EVENT LISTENERS *
+ *******************/
 
-
-
-
-
-/************************
- * ROLL EVENT LISTENERS *
-************************/
-
-
-
-
+/******************
+ * RESET FUNCTION *
+ ******************/
 
 /****************
  * MATH SECTION *
